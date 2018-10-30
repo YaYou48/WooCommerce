@@ -23,4 +23,14 @@ function sf_child_theme_dequeue_style() {
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
 
+  
+add_action('woocommerce_after_shop_loop_item','show_stock', 10);
+ 
+function show_stock() {
+    global $product;
+    if ( $product->stock ) {
+        echo '<div class="remaining">' . number_format($product->stock,0,'','') . ' left in stock</div>'; 
+    }
+}
+
 
