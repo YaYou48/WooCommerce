@@ -13,12 +13,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 // Condition sur le prix
-if ($product->get_price_html() < 20 ) {
-	echo "lol";
+if ((float)$product->get_price() > 20 ) {
+	echo "+20!";
 }
 else {
-	echo "lolilol";
+	echo "-20!";
 }
+var_dump((float)$product->get_price());
 // Fin Condition
 ?>
 <p class="price"><?php echo $product->get_price_html(); ?></p>
