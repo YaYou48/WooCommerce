@@ -29,7 +29,7 @@ add_action('woocommerce_after_shop_loop_item','show_stock', 10);
 function show_stock() {
     global $product;
     if ( $product->stock ) {
-        echo '<div class="remaining">' . number_format($product->stock,0,'','') . ' left in stock</div>'; 
+        wc_get_template_part('template-parts/product-remaining'); 
     }
 }
 
