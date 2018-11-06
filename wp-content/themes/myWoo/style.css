@@ -4,3 +4,6 @@ Author: CaYou
 Description: my WooCommerce Theme
 Version: 0.0.1
 */
+h1 {
+    color: red;
+}
