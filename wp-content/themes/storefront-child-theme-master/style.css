@@ -1,7 +1,7 @@
 /*
-Theme Name:   	Storefront Child Theme
-Theme URI:    	https://github.com/stuartduff/storefront-child-theme
-Author:       	Stuart Duff
+Theme Name:     Storefront Child Theme
+Theme URI:      https://github.com/stuartduff/storefront-child-theme
+Author:         Stuart Duff
 Author URI:     http://stuartduff.com
 Template:     	storefront
 Description:  	This is a blank child theme for WooThemes StoreFront theme
@@ -22,3 +22,45 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
+#masthead {
+  padding: 0;
+  background-color: #2E1B00;
+  color: white;
+  text-align: center; }
+  #masthead .main-navigation {
+    width: 100%; }
+    #masthead .main-navigation a {
+      padding: .5rem 1rem .5rem 1rem; }
+  #masthead .site-branding {
+    width: 100%;
+    font-size: 3rem; }
+    #masthead .site-branding a {
+      text-decoration: none; }
+  #masthead li > a {
+    font-size: 2rem;
+    opacity: 0.5; }
+    #masthead li > a:hover {
+      text-decoration: none;
+      opacity: 1; }
+
+.site-content .col-full {
+  max-width: 90%; }
+
+.page-title {
+  font-size: 3rem;
+  font-weight: bold; }
+
+.type-product {
+  background-color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem grey; }
+  .type-product .onsale, .type-product .buy {
+    border: none;
+    font-size: 2rem;
+    font-weight: 600; }
+  .type-product .onsale {
+    color: #ffcc00; }
+  .type-product .buy {
+    color: #a28f6f; }
+
+/*# sourceMappingURL=style.css.map */

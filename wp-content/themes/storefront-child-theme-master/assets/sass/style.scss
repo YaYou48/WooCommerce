@@ -23,3 +23,62 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
+
+
+#masthead {
+    padding: 0;
+    background-color: #2E1B00;
+    color: white;
+    text-align: center;
+    .main-navigation {
+        width: 100%;
+        a {
+            padding: .5rem 1rem .5rem 1rem;
+        }
+    }
+    .site-branding {
+        width: 100%;
+        font-size: 3rem;
+        a {
+            text-decoration: none;
+        }
+    }
+    li>a {
+        font-size: 2rem;
+        opacity: 0.5;
+        &:hover {
+            text-decoration: none;
+            opacity: 1;
+        }
+    } 
+}
+.site-content {
+    .col-full {
+        max-width: 90%;
+    }
+}
+.page-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.type-product {
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem grey;
+    .onsale, .buy{
+        border: none;
+        font-size: 2rem;
+        // display: inline-block;
+        font-weight: 600;
+    }
+    .onsale {
+        color: #ffcc00;
+    }
+    .buy {
+        color: #a28f6f
+    }
+}
+// .col-1, .col-2 {
+//     max-width: 100%;
+// }
+
