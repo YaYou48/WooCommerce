@@ -1,9 +1,47 @@
-/*
-Theme Name: myWoo
-Author: CaYou
-Description: my WooCommerce Theme
-Version: 0.0.1
-*/
-h1 {
-    color: red;
-}
+nav {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0; }
+  nav h1 {
+    margin: 1rem 0 1rem 5rem;
+    font-size: 5rem;
+    color: white; }
+  nav .menu-main-container {
+    margin-top: 2rem; }
+    nav .menu-main-container ul {
+      list-style-type: none;
+      text-align: center; }
+      nav .menu-main-container ul .current_page_item a {
+        font-weight: 900;
+        color: white; }
+      nav .menu-main-container ul li {
+        padding: 0 .5rem 0 .5rem;
+        display: inline;
+        font-size: 1.5rem; }
+        nav .menu-main-container ul li a {
+          color: lightgray;
+          text-transform: uppercase; }
+
+.carousel-caption {
+  bottom: initial;
+  top: 50%;
+  background-color: white; }
+
+.menu-category-container, .menu-shop-container {
+  margin-top: 2rem; }
+  .menu-category-container ul, .menu-shop-container ul {
+    list-style-type: none;
+    text-align: center; }
+    .menu-category-container ul .current_page_item a, .menu-shop-container ul .current_page_item a {
+      font-weight: 900;
+      color: white; }
+    .menu-category-container ul li, .menu-shop-container ul li {
+      padding: 0 .5rem 0 .5rem;
+      display: inline;
+      font-size: 1.5rem; }
+      .menu-category-container ul li a, .menu-shop-container ul li a {
+        color: lightgray;
+        text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,20 +1,31 @@
 <?php
-
 get_header();
+?>
+<div class="row">
+<div class="col-8">
+  <?php wp_nav_menu(array('menu' => 'Category')); ?>
+</div>
+<div class="col-4">
+<?php wp_nav_menu(array('menu' => 'Shop')); ?>
+</div>
+</div>
 
-if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-<?php the_title(); ?>
-<?php the_content(); ?>
-
-<?php 
+<section class="row">
+  <?php
+  // the Loop
+  while (have_posts()) : the_post(); 
+  ?>
+<div class="col-4">
+  <?php
+    // the content of the post
+    the_content(); 
+  ?>
+</div>
+<?php
 endwhile;
-
-else: ?>
-
-<p><?php _e('Désolé, aucun article ne correspond à votre recherche.'); ?></p>
-
-<?php endif;
+  ?>
+</section>
+<?php
 
 get_sidebar();
 get_footer();
